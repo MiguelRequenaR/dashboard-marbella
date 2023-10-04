@@ -1,9 +1,10 @@
-import Image from 'next/image'
+"use client"
+import Login from '@/pages/Login/Login'
 
 export default function Home() {
   return (
     <>
-      <h1 className='text-6xl'>Home</h1>
+      <Login/>
     </>
   )
 }
