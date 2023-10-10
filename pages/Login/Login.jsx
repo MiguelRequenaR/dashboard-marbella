@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 import { motion } from "framer-motion"
 import Register from "./Register"
@@ -58,11 +59,11 @@ function Login() {
                                 />
                             </div>
                             <div className='flex justify-center'>
-                                <input 
-                                    type="submit" 
-                                    value="Iniciar Sesión"
-                                    className='bg-indigo-600 text-white px-2 py-3 rounded-full shadow-lg w-[50%] focus:outline-none hover:bg-indigo-800 transition duration-500 ease-in-out cursor-pointer'
-                                />
+                                <Link href="/Dashboard/Dashboard">
+                                    <div className='bg-indigo-600 text-white px-3 py-3 rounded-full shadow-lg w-full focus:outline-none hover:bg-indigo-800 transition duration-500 ease-in-out cursor-pointer'>
+                                        Iniciar Sesión
+                                    </div>
+                                </Link>
                             </div>
                         </form>
                     </div>
